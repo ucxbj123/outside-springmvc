@@ -13,7 +13,9 @@
     <init-param>
       <!--contextConfigLocation:上下文配置路径，固定值-->
       <param-name>contextConfigLocation</param-name>
-      <!--classpath:类路径，值得是Java和resources文件夹-->
+      <!--classpath:类路径，值得是Java和resources文件夹，
+        作为一个项目被idea打开时，如果提示找不到springmvc.xml，实际又有，需要重新设置刷新resources文件夹归属
+      -->
       <!--springmvc.xml:指的是配置文件的名称：需要配置springmvc.xml，在下面-->
       <param-value>classpath:springmvc.xml</param-value>
     </init-param>
@@ -24,6 +26,12 @@
   <servlet-mapping>
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <!-- 因为默认的配置DispatcherServlet屏蔽了html页面的访问;使用以下配置即可-->
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.html</url-pattern>
   </servlet-mapping>
 
 

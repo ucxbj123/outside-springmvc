@@ -7,7 +7,7 @@
   <groupId>org.example</groupId>
   <artifactId>springmvc</artifactId>
   <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+  <packaging>jar</packaging>
 
   <name>springmvc Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
@@ -129,8 +129,8 @@
   </dependencies>
 
   <build>
-    <finalName>springmvc</finalName>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+<!--    <finalName>springmvc</finalName>-->
+<!--    <pluginManagement>&lt;!&ndash; lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) &ndash;&gt;-->
       <plugins>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -162,16 +162,16 @@
           <version>2.8.2</version>
         </plugin>
       </plugins>
-    </pluginManagement>
-      <plugins>
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <configuration>
-                  <source>8</source>
-                  <target>8</target>
-              </configuration>
-          </plugin>
-      </plugins>
+<!--    </pluginManagement>-->
+<!--      <plugins>-->
+<!--          <plugin>-->
+<!--              <groupId>org.apache.maven.plugins</groupId>-->
+<!--              <artifactId>maven-compiler-plugin</artifactId>-->
+<!--              <configuration>-->
+<!--                  <source>8</source>-->
+<!--                  <target>8</target>-->
+<!--              </configuration>-->
+<!--          </plugin>-->
+<!--      </plugins>-->
   </build>
 </project>

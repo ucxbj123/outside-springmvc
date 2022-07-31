@@ -40,4 +40,10 @@ public class AppTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void test(){
+        String path = Test.class.getResource("/").toString();
+        System.out.println("path = " + path);
+    }
 }
